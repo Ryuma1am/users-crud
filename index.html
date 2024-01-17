@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Crud</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="form__container">
+        <form class="form">
+          <fieldset>
+            <legend>Enter user data</legend>
+            <p>
+              <label for="full__name">Full Name:</label>
+              <input type="text" id="full__name" />
+            </p>
+            <p class="select">
+              <label for="gender">Select Gender:</label>
+              <select id="gender">
+                <option selected>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </p>
+            <p>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email"/>
+            </p>
+            <p>
+              <label for="number__phone">Phone Number:</label>
+              <input type="phone" id="number__phone" />
+            </p>
+            <p>
+              <button type="submit" class="send__data">Send Data</button>
+            </p>
+          </fieldset>
+        </form>
+      </header>
+      <section>
+        <table class="users__data">
+          <caption>
+            Users Data
+          </caption>
+          <tr>
+            <th>Full Name</th>
+            <th>E-mail</th>
+            <th>Phone Number</th>
+            <th>Gender</th>
+            <th>Delete or Edit</th>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <section class="modal__container modal__off">
+        <article class="modal">
+            <form class="form__modal">
+                <fieldset>
+                  <legend>Edit user data</legend>
+                  <p>
+                    <label for="modal__name">Full Name:</label>
+                    <input type="text" id="modal__name" />
+                  </p>
+                  <p class="select__modal">
+                    <label for="gender__modal">Select Gender:</label>
+                    <select id="gender__modal">
+                      <option selected>Male</option>
+                      <option>Female</option>
+                      <option>Other</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label for="email__modal">E-mail:</label>
+                    <input type="email" id="email__modal"/>
+                  </p>
+                  <p>
+                    <label for="number__phone__modal">Phone Number:</label>
+                    <input type="phone" id="number__phone__modal" />
+                  </p>
+                  <p>
+                    <button type="submit" class="send__data__modal">Save Data</button>
+                  </p>
+                </fieldset>
+              </form>
+        </article>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
